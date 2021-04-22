@@ -1,0 +1,11 @@
+
+type Query {
+  launches(missionName: String, rocketName: String, launchYear: Int): [Launches!]
+}
+
+type Launches {
+  missionName: String!
+  rocketName: String!
+  launchDate: String!
+  videoLink: String!
+}
